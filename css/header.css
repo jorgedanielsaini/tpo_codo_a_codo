@@ -1,0 +1,151 @@
+
+header{
+	position: fixed;
+	z-index: 100;
+	min-width: 100vw;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 10vh;
+	background-color: #212529;
+	transition: 0.2s 0.1s;	
+}
+
+.logo {
+	margin: 0;
+}
+
+.burger{
+	display: none; 
+	cursor: pointer;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+.burger span{
+	display: block;
+	background-color: #f3f3f3;
+	height: 3px;
+	width: 28px;
+	margin: 10px auto;
+	border-radius: 2px;
+}
+
+.menu-item{
+	display: flex;
+	padding: 0;
+}
+
+.menu-item li {
+	padding: 0 35px;
+	list-style-type: none;
+	transition: 0.6s;
+}
+
+.menu-item li a{
+	color: #f4f4f4;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.3rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menu-item li:hover{
+	background-color:  #8E2DE2;
+	box-shadow: 0 0 5px  #8E2DE2, 0 0 15px  #8E2DE2, 0 0 30px  #8E2DE2, 0 0 60px  #8E2DE2;
+}
+
+.menu-item.activado{
+	display: flex;
+	animation: view-menu 0.7s ease-in-out both;
+}
+
+.social{
+	margin-left: 2rem;
+}
+
+.social a{
+	padding: 0 .5rem;
+}
+
+@keyframes view-menu {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+.br-1.animado{
+	transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado{
+	opacity: 0;
+}
+
+.br-3.animado{
+	transform: rotate(45deg) translate(-10px, -8px);
+}
+
+
+
+/* MOBILE */
+/* navigation bar */
+@media (max-width:768px){
+	
+
+	.logo{
+		padding-left: 25px;
+	}
+
+	.burger{
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 25px;
+		transition: 0.2s 0.1s;
+	}
+
+	.burger:hover{
+		transform: rotate(360deg);
+	}
+
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px 0;
+	}
+
+	.menu-item{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 92vh;
+		margin: 0;
+		padding: 0%;
+		width: 100%;
+		display: none; 
+		opacity: 0;
+	}
+
+	.menu-item li{
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+	}
+	.social{
+		margin-left: 0;
+	}
+
+	.social::before{
+		content: "";
+		display: block;
+		width: 100%;
+		margin-bottom: .3rem;
+		border: 1px solid #8E2DE2;
+	}
+}
+

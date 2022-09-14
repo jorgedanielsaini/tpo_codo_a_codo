@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi página web</title>
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+	<!-- MENU -->
+	<header>
+		<nav>
+			<a href="#">
+				<img class="logo" src="" alt="logo">
+			</a>
+			<ul class="menu-item">
+				<li><a href="#inicio" onclick="activate_nav()">Inicio</a></li>
+				<li><a href=" #servicios" onclick="activate_nav()">Servicios</a></li>
+				<li><a href="#equipo" onclick="activate_nav()">Equipo</a></li>
+				<li><a href="#contacto" onclick="activate_nav()">Contacto</a></li>
+				<div class="social">
+					<a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram_ico.png"
+							alt="logo-instagram"></a>
+					<a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="./img/whatsapp_ico.png"
+							alt="logo-whatsapp"></a>
+				</div>
+			</ul>
+
+			<button class="burger" type="button" onclick="activate_nav()">
+				<span class="br-1"></span>
+				<span class="br-2"></span>
+				<span class="br-3"></span>
+			</button>
+		</nav>
+	</header>
+
+	<main>
+		<section id="inicio" class="house">
+			<div class="text-house">
+				<div>
+					<h2><span>Lorem ipsum dolor.</span></h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, deleniti</p>
+					<div class="selector">
+						<div class="btn">
+							<a href="#contacto">Contactar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="servicios" class="service">
+			<div class="container">
+				<h2>SERVICIOS</h2>
+			</div>
+		</section>
+
+		<section id="equipo" class="team">
+			<div class="container">
+				<h2>EQUIPO</h2>
+			</div>
+		</section>
+
+		<section id="contacto" class="contact">
+			<div class="container">
+				<article class="title-contact">
+					<h2>CONTACTO</h2>
+				</article>
+				<article class="form-contact">
+					<form action="">
+						<div class="form-group block">
+							<label for="name">Nombre y apellido</label>
+							<input type="text">
+						</div>
+						<div class="form-group">
+							<label for="name">E-mail</label>
+							<input type="email">
+						</div>
+						<div class="form-group">
+							<label for=" name">WhatsApp</label>
+							<input type="number">
+						</div>
+						<div class="form-group block">
+							<label for=" name">Comentario</label>
+							<textarea name="" id="" rows="4"></textarea>
+						</div>
+						<div class="selector">
+							<div class="btn">
+								<a href="#">Enviar</a>
+							</div>
+						</div>
+					</form>
+				</article>
+				<article class="data-contact">
+					<h4>Lorem ipsum dolor</h4>
+					<ul>
+						<li><i class="fa-solid fa-house"> </i><span>Dirección completa 1548 - Localidad (CP
+								xx57888)</span></li>
+						<li><i class="fa-solid fa-mobile-screen-button"></i> <span>(+54) 11 5555-5555</span></li>
+						<li><i class="fa-brands fa-square-whatsapp"></i><span>(+54) 11 5555-5555</span></li>
+						<li><i class="fa-solid fa-envelope"></i><span>consultas@loremipsum.com</span></li>
+					</ul>
+				</article>
+				<article class="map-contact">
+					<div class="iframe">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3872098662973!2d-58.65228489117011!3d-34.6449229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf52726b30b1%3A0x221712df2ff90c9c!2sArrecifes%201320%2C%20B1712KPV%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1662239185441!5m2!1ses!2sar"
+							style="border:0;" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			Footer
+		</div>
+	</footer>
+
+	<!--  SCRIPT -->
+	<script src="./js/index.js"></script>
+	<script src="https://kit.fontawesome.com/15d3f2a6e5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+.house{
+	position: relative;
+	background-image: url(../img/max-duzij-qAjJk-un3BI-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.house::before{
+	content: "";
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(rgba(14, 13, 13, 0.945), rgba(34, 40, 49, 0.815));
+}
+
+.text-house{
+	min-height: 90vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.text-house span{
+	letter-spacing: 5px;
+	font-size: 2.3rem;
+	font-family: "Anton";
+	margin: 0 0 0 5px;
+}
+
+.text-house p {
+	margin: 1rem 0;
+	font-size: 1.2rem;
+}
+
+.btn-house{
+	padding: 0.8rem 1.2rem;
+	font-size: 1rem;
+	background-color: blueviolet;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+.btn-house:hover{
+	cursor: pointer;
+	border: 1px solid #f3f3f3;
+	background-color: rgba(137, 43, 226, 0.781);
+}
