@@ -1,0 +1,85 @@
+.team .container{
+	display: grid;
+	grid-template-columns:repeat(3, auto);
+	grid-template-rows: 2rem auto;
+	grid-auto-flow: row;
+	grid-template-areas:
+	"title-team title-team title-team"
+}
+
+.title-team{
+	grid-area: title-team; 
+	justify-self: center; 
+}
+
+.content-card{
+	max-width: 100%;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.container .card-team {
+	position: relative;
+	width: 19rem;
+	height: 25rem;
+	background-color: rgba(255, 255, 255, 0.05);
+	margin: 1rem;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+	border-radius: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card-team:hover .content {
+	opacity: 1;
+}
+
+.imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-team .content{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.imgBx {
+	position: relative;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	overflow: hidden;
+	border: .5rem solid rgba(0,0,0,0.25);
+}
+
+.contentBx h3, span{
+	letter-spacing: 2px;
+	font-weight: 500;
+	text-align: center;
+}
+
+@media (max-width:768px){
+	.team .container{
+		max-height: 100%;
+		min-height: auto;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 2rem auto;
+		grid-template-areas:
+		"title-team"
+		"content-card"
+	}	
+	
+}
