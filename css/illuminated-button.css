@@ -37,6 +37,7 @@
   
   .selector .btn:hover a {
 	letter-spacing: 3px;
+	cursor: pointer;
   }
   
   .selector .btn a::before {
@@ -97,7 +98,7 @@
 	width: 80%;
 	border-radius: 30px;
 	transition-delay: 0.3s;
-  }
+}
   
   .selector .btn:nth-child(1)::before,
   .selector .btn:nth-child(1)::after {
