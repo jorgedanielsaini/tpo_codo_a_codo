@@ -17,7 +17,7 @@ function activate_nav(){
 /* Form Validation */
 
 const expressions = {
-	name: /^[a-zA-zÀ-ÿ\s]{1,40}$/,
+	name: /^[a-zA-zÀ-ÿ\s]{1,40}$/
 	
 }
 
