@@ -78,10 +78,13 @@ inputs.forEach((input) =>{
 // Envia el formulario
 function enviar(){
 	if(resName && resMail && resWhatsApp && resComent){
-		console.log("enviado")
+		formulario.reset();
+		swal("Formulario enviado!", "Gracias por escribirnos, nos comunicaremos a la brevedad", "success")
 	} else {
-		console.log("no enviado")
+		inputs.forEach((input) =>{
+			input.focus();
+		});
+		coment.focus();
+		coment.blur();
 	}
-	
-	
 }
