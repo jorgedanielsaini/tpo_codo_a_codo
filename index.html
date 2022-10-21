@@ -176,30 +176,33 @@
 				<article class="form-contact">
 					<form action="" id="formulario">
 						<div class="form-group block">
-							<label for="name">Nombre y apellido</label>
-							<input type="text" maxlength="40" placeholder="Juan Carlos Lopez">
+							<label for="nameForm">Nombre y apellido</label>
+							<input type="text" name="nameForm" id="nameForm" maxlength="40"
+								placeholder="Juan Carlos Lopez">
 							<p class="valid-input">Ingrese su nombre y apellido. No esta permitido ingresar números ni
 								caracteres especiales</p>
 						</div>
 						<div class="form-group">
-							<label for="name">E-mail</label>
-							<input type="email" placeholder="barber@barber.com">
+							<label for="mail">E-mail</label>
+							<input type="email" name="mail" id="mail" placeholder="barber@barber.com">
 							<p class="valid-input">Formato de correo invalido</p>
 						</div>
 						<div class="form-group">
-							<label for=" name">WhatsApp</label>
-							<input type="number" placeholder="1123456789">
+							<label for="whatsApp">WhatsApp</label>
+							<input type="number" name="whatsApp" id="whatsApp" placeholder="1123456789">
 							<p class="valid-input">Ingrese solo números sin espacios ni caracteres especiales. Mínimo 7
 								digitos y máximo 12</p>
 						</div>
 						<div class="form-group block">
-							<label for=" name">Comentario</label>
-							<textarea name="" id="" rows="4"></textarea>
+							<label for="coment">Comentario</label>
+							<textarea name="coment" id="coment" rows="4" onkeyup="countCharacters()"
+								maxlength="400"></textarea>
+							<p class="characters"><span id="counter">0</span> de 400</p>
 							<p class="valid-input">Ingrese mínimo 10 caracteres</p>
 						</div>
 						<div class="selector">
 							<div class="btn">
-								<a onclick="form_validation()">Enviar</a>
+								<a onclick="enviar()">Enviar</a>
 							</div>
 						</div>
 					</form>
