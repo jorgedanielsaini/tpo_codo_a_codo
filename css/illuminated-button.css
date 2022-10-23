@@ -20,7 +20,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(177, 1, 103,0.3);
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -64,7 +64,7 @@
 	bottom: -5px;
 	width: 30px;
 	height: 10px;
-	background-color: #8E2DE2;
+	background-color:  #e71f8d;
 	border-radius: 10px;
 	transition: 0.5s;
 	transition-delay: 0s;
@@ -86,7 +86,7 @@
 	top: -5px;
 	width: 30px;
 	height: 10px;
-	background-color:  #8E2DE2;
+	background-color:  #e71f8d;
 	border-radius: 10px;
 	transition: 0.5s;
 	transition-delay: 0s;
@@ -102,6 +102,6 @@
   
   .selector .btn:nth-child(1)::before,
   .selector .btn:nth-child(1)::after {
-	background-color:  rgb(241, 30, 171);
-	box-shadow: 0 0 5px  #e22dca, 0 0 15px  #e22db5, 0 0 30px  #e22dd3, 0 0 60px  #e22dd3;
+	background-color:  #e71f8d;
+	box-shadow: 0 0 5px  #e71f8d, 0 0 15px  #e71f8d, 0 0 30px  #e71f8d, 0 0 60px  #e71f8d;
   }

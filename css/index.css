@@ -5,6 +5,7 @@
 @import url(footer.css);
 @import url(team.css);
 @import url(service.css);
+@import url(branch-offices.css);
 
 *{
 	margin: 0;
@@ -14,8 +15,8 @@
 }
 
 body{
-	background-color: #212529;
-	color: #f4f4f4;
+	background-color: #faf1f7;
+	color: #580343;
 }
 
 html{

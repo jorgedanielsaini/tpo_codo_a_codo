@@ -1,6 +1,6 @@
 .house{
 	position: relative;
-	background-image: url(../img/legal1.jpg);
+	background-image: url(../img/aroha.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -14,7 +14,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: linear-gradient(rgba(255, 164, 228, 0.945), rgba(248, 107, 225, 0.815));
+	background-image: linear-gradient(rgba(250, 241, 247, 0.715), rgba(247, 138, 210, 0.945));
 }
 
 .text-house{
@@ -23,7 +23,6 @@
 	display: flex;
 	align-items: center;
 	padding: 0 1.5rem;
-	color: black;
 }
 
 .text-house span{
@@ -41,7 +40,7 @@
 .btn-house{
 	padding: 0.8rem 1.2rem;
 	font-size: 1rem;
-	background-color: rgb(226, 43, 202);
+	background-color: blueviolet;
 	border: 1px solid transparent;
 	border-radius: 10px;
 }
@@ -49,5 +48,5 @@
 .btn-house:hover{
 	cursor: pointer;
 	border: 1px solid #f3f3f3;
-	background-color: rgba(226, 43, 180, 0.781);
+	background-color: rgba(137, 43, 226, 0.781);
 }
