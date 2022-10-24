@@ -52,7 +52,7 @@ function form_validation(e){
 		case "nameForm":
 			resName = input_validation(expressions.name_valid, e.target, 0);
 		break;
-		case "mail":
+		case "mail": //el input mail no es obligatorio
 			if(e.target.value){
 				resMail = input_validation(expressions.mail_valid, e.target, 1);
 			} else {
@@ -88,3 +88,22 @@ function enviar(){
 		coment.blur();
 	}
 }
+
+//API
+let url = "https://randomuser.me/api/";
+	
+fetch(url)
+	.then(res => res.json())
+	.then(data =>{
+	let name =  data.results[0].name.first;
+	let lastName =  data.results[0].name.last;
+	let photo = data.results[0].picture.medium;
+	document.getElementById("api-conect").innerHTML = `
+	<div class="imgBx"><img src=${photo} alt="Foto de perfil de ${name} ${lastName}"></div><div class="contentBx"><h3>${name.toUpperCase()} ${lastName.toUpperCase()}</h3><br></div>`;
+	})
+	.catch(error => {
+		console.log(error)
+	})
+
+
+
